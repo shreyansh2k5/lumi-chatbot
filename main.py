@@ -62,4 +62,16 @@ async def on_message(message):
         else:
             await message.reply("🧠 Please say something after mentioning me.")
 
+# Start the bot
 client.run(DISCORD_TOKEN)
+
+# 🧠 Keep Render happy with a dummy HTTP server
+from threading import Thread
+from http.server import HTTPServer, SimpleHTTPRequestHandler
+
+def keep_alive():
+    server = HTTPServer(("0.0.0.0", 8080), SimpleHTTPRequestHandler)
+    server.serve_forever()
+
+Thread(target=keep_alive).start()
+
