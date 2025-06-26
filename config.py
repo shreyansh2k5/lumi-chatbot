@@ -36,7 +36,7 @@ DEFAULT_PERSONALITY = "intellectual"
 REPLICATE_MODEL = "meta/meta-llama-3-8b-instruct"
 
 # Prompt builder
-def build_prompt(user_input: str, personality_key: str)
+def build_prompt(user_input: str, personality_key: str):
     persona = PERSONALITIES[ACTIVE_PERSONALITY]
     return (
         f"{persona['description']}\n\n"
