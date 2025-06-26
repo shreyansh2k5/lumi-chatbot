@@ -45,7 +45,8 @@ def build_prompt(user_input: str, personality_key: str):
     )
 
 # Model generation parameters
-def get_model_params():
+def get_model_params(personality_key: str) -> dict:
     return {
-        "temperature": PERSONALITIES[ACTIVE_PERSONALITY]["temperature"]
+        "temperature": PERSONALITIES[personality_key]["temperature"]
     }
+
