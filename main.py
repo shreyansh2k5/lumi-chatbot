@@ -3,6 +3,8 @@ import discord
 import replicate
 from dotenv import load_dotenv
 import config
+import keep_alive
+keep_alive.start()
 
 load_dotenv()
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
