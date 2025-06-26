@@ -30,7 +30,7 @@ PERSONALITIES = {
 
 DEFAULT_PERSONALITY = "intellectual"
 # Choose which personality to use by default
-#ACTIVE_PERSONALITY = "intellectual"
+ACTIVE_PERSONALITY = "intellectual"
 
 # Model info
 REPLICATE_MODEL = "meta/meta-llama-3-8b-instruct"
