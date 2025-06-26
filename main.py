@@ -1,4 +1,3 @@
-exit 0
 import discord
 import os
 import replicate
