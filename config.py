@@ -28,6 +28,7 @@ PERSONALITIES = {
     }
 }
 
+DEFAULT_PERSONALITY = "intellectual"
 # Choose which personality to use by default
 ACTIVE_PERSONALITY = "intellectual"
 
